@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="panel panel-warning">
+                        <div class="panel-heading"><h2 style="color:coral">ลงทะเบียนสินค้า</h2> </div>
+                        <center><h1 style="color: darkgrey">ข้อมูลสินค้า</h1>
+                        <form action="/product_post "method="post">
+                            <table class="table table-info">
+                                <tr>
+                                    <th>ชื่อสินค้า</th>
+                                    <td><input type="text" name="title" size="25" maxlength="30" required></td><br>
+                                </tr><br>
+                                <tr>
+                                    <th>รายละเอียด</th>
+                                    <td><input type="text" name="detail" size="25" maxlength="30" required></td><br>
+                                </tr><br>
+                                <tr>
+                                    <th>ราคา</th>
+                                    <td><input type="text" name="price" size="25" maxlength="10" required></td>
+                                </tr><br>
+                                <tr>
+                                    <th>จำนวน</th>
+                                    <td><input type="text" name="amount" size="25" maxlength="10" required></td><br>
+                                </tr><br>
+                                <tr>
+                                    <td colspan="2" align="center">
+                                        <input type="submit"value="บันทึก" class="btn btn-success">
+                                        <input type="reset"value="ยกเลิก" class="btn btn-danger">
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </center>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </head>
+</html>

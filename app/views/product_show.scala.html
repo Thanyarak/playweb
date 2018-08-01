@@ -1,0 +1,34 @@
+@(products:Products)
+<html>
+    <head>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="panel panel-warning">
+                    <div class="panel-heading"><h2 style="color:salmon">ลงทะเบียนสินค้า</h2> </div>
+                    <center><h1 style="color: darkgrey">ข้อมูลสินค้า</h1>
+                    <table class="table table-primary">
+                        <tr>
+                            <th>ชื่อสินค้า :</th>
+                            <td>@products.getTitle</td>
+                        </tr>
+                        <tr>
+                            <th>รายละเอียด :</th>
+                            <td>@products.getDetail</td>
+                        </tr>
+                        <tr>
+                            <th>ราคา :</th>
+                            <td>@products.getPrice</td>
+                        </tr>
+                        <tr>
+                            <th>จำนวน :</th>
+                            <td>@products.getAmount</td>
+                        </tr>
+                        <div class="col-md-3"></div>
+                    </table>
+                </center>
+            </div>
+        </div>
+        </div>
+    </head>
+</html>

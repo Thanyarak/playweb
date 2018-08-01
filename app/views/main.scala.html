@@ -1,0 +1,34 @@
+@(content:Html)
+
+<html>
+    <html>
+        <head>
+            <title> YG Electronics</title>
+            <link type="text/css" rel="stylesheet"
+            href="/assets/stylesheets/bootstrap/css/bootstrap.css">
+            <link href="../../public/stylesheets/bootstrap/css/bootstrap.css">
+        </head>
+        <body bgcolor="#dcdcdc" >
+            <div class="container-fluid">
+                <div class="row" style="background-color: #d06f00">
+                </div>
+                <div class="row">
+                    <div class="col-md-2 "  style="background-color:grey">
+                        <div class="row">
+                            <div class="col-md-12" style="background-color:grey">
+                                <img src="/assets/images/logo.jpg" class="img-rounded" alt="Cinque Terre" width="210" height="200">
+                            </div>
+                        </div>
+                        <br>
+                        @menu()
+                        <br><br></div>
+                    <div class="col-md-10" style="background-color: rgba(179, 179, 179, 0.49)">
+                        @content
+                        <br><br></div>
+                    <div class="col-md-12" style="background-color:dimgray">
+                        <br><br></div>
+
+                </div>
+            </div>
+        </body>
+    </html>

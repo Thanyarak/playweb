@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="panel panel-info">
+                    <div class="panel-heading"><h2 style="color:darkslategray">สมัครสมาชิก</h2> </div>
+                    <center><h1 style="color: lightsalmon">ข้อมูลลูกค้า</h1>
+                        <form action="/Electronics_post"method="post">
+                            <table class="table table-info">
+            <tr>
+                <th>ชื่อ-สกุล</th>
+                <td><input type="text" name="title" size="30" maxlength="40" required></td>
+            </tr>
+            <tr>
+                <th>รหัสบัตรประจำตัวประชาชน</th>
+                <td><input type="text" name="number" size="30" maxlength="40" required></td>
+            </tr>
+             <tr>
+                 <th>วันเกิด</th>
+               <td><input type="date"name="birthday" size="30" maxlength="20"required></td>
+             </tr>
+              <tr>
+                 <th>เพศ</th>
+                 <td><input type="radio"name="gender"value="ชาย">ชาย
+             <input type="radio"name="gender"value="หญิง">หญิง
+                 </td>
+             </tr>
+            <tr>
+                <th>ที่อยู่</th>
+                <td><textarea name="address" cols="30" rows="5" required></textarea></td><br>
+            </tr>
+            <tr>
+                <th>เบอร์โทรศัพท์</th>
+                <td><input type="text" name="tell" size="30" maxlength="10" required></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit"value="บันทึก" class="btn btn-success"size="5">
+                    <input type="=reset"value="ยกเลิก" class="btn btn-danger"size="5">
+                </td>
+            </tr>
+                            </table>
+                        </form>
+                    </center>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </head>
+</html>
